@@ -1,0 +1,60 @@
+$color1: #697084;
+
+.creative-template {
+  overflow: hidden;
+}
+
+.header {
+  background-color: #132f41;
+  color: #eee;
+
+  &__title::before {
+    content: '|';
+    margin-right: 0.75rem;
+  }
+
+  &__position,
+  &__title {
+    color: #aaa;
+  }
+
+  &__bio {
+    color: #ccc;
+  }
+
+  &__footer {
+    background-color: #0a1728;
+    .item {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    img {
+      width: 80%;
+      border: 6px solid $color1;
+    }
+  }
+}
+
+.expertise-areas__title,
+.working-experiences__header {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 4px solid $color1;
+  color: $color1;
+  font-weight: bold;
+}
+
+.expertise-areas {
+  .badge {
+    background-color: $color1;
+    color: #e5e5e5;
+  }
+}
